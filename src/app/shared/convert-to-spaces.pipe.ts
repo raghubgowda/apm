@@ -4,7 +4,7 @@ import { PipeTransform, Pipe } from '@angular/core';
     'name':'convertospaces'
 })
 export class ConvertToSpacesPipe implements PipeTransform{
-    transform(value:string, character:string): string{
+    transform(value: string, character: string): string{
         return value.replace(character, ' ');
     }
 }
