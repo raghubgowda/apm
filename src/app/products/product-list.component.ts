@@ -4,14 +4,13 @@ import { IProduct } from './product';
 
 @Component({
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css'],
-  providers: [ProductService]
+  styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
   pageTitle: string = 'Product List';
   imageWidth: number = 50;
   imageMargin: number = 2;
-  showImage: boolean = false;
+  showImage: boolean = true;
   errorMessgae: string = '';
 
   _listFilter: string = '';

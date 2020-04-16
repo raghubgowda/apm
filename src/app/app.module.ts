@@ -18,7 +18,8 @@ import { ProductDetailComponent } from './products/product-detail.component';
     ProductListComponent,
     ConvertToSpacesPipe,
     StarComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -27,13 +28,12 @@ import { ProductDetailComponent } from './products/product-detail.component';
     HttpClientModule,
     RouterModule.forRoot([
       { path: 'products', component: ProductListComponent },
-      { path: 'product/:id', component: ProductDetailComponent },
+      { path: 'products/:id', component: ProductDetailComponent },
       { path: 'welcome', component: WelcomeComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ])
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
